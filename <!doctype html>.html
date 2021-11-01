@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<body style="background-color: blue;"
+  <head>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width, initial-scale1">
+    <title>My first website! - Stijn Otten</title>
+  </head>
+  <body>
+<h1>My first Website - Stijn Otten</h1>
+<hr>
+<h2>About me: Stijn Otten</h2>
+My name is Stijn Otten. I am a 24 year old student CE IEMES at the Fontys in Tilburg. In front of you is my first website.
+This is my first website and I'm <b>super excited!</b>
+
+<p>I am an energetic student of commercial economics with a focus on events and entertainment. My challenges are in B2B. 
+  Service orientation and customer experience are central. Others say that I have a fluent but also businesslike talk. 
+  In my spare time, I can be found on the football pitch or travelling through Europe by train.</p>
+<hr>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.flex-container {
+  display: -webkit-flex;
+  display: flex;  
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+.flex-container > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.main {
+  text-align: left;
+  background: cornflowerblue;
+}
+
+.header {background: lightblue;}
+.footer {background: lightgreen;}
+.aside {background: moccasin;}
+
+@media all and (min-width: 768px) {
+  .aside { flex: 1 auto; }
+  .main    { flex: 3 0px; }
+  .aside { order: 1; } 
+  .main    { order: 2; }
+  .footer  { order: 4; }
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+  <header class="header">My new job as a operational manager FC Futsalclub. 
+    <Br>
+      Stijn Otten is door FC Eindhoven Futsal aangesteld als operationeel manager. De 24-jarige student was al eerder betrokken bij de club maar is vanaf heden ook formeel verantwoordelijk voor de operationele zaken.
+
+    Stijn studeert momenteel commerciële economie – IEMES op de Fontys in Tilburg. Een studie die gericht is op evenementen en media. Stijn heeft in het verleden vaker diensten verricht ten gunste van FC Eindhoven. Deze samenwerking is destijds goed bevallen en daarom is er besloten om dit nieuw leven in te blazen. Stijn zal binnen zijn functie mede verantwoordelijk zijn voor communicatie, commerciële zaken en events.</header>
+  <aside class="aside">Een prachtige kans
+  <br>
+  Stijn Otten: “Ik ben blij met het vertrouwen dat ik van de club krijg en kijk erg uit naar deze uitdaging, reageert Stijn op zijn benoeming. Ik deed al wat kleine klusjes voor FC Eindhoven Futsal en krijg nu een geweldige kans om nog meer voor de club te betekenen. Die kans laat ik natuurlijk niet liggen.
+</aside>
+  </article>
+  <footer class="footer">Basisplaats afgedwongen
+    <br>
+    Algemeen directeur Badloe over de nieuwste aanwinst: “We zijn niet alleen op het speelveld maar ook in de organisatie altijd op zoek naar jeugdig talent dat ons team kan versterken. Stijn is een leergierig, veelzijdig sportfanaat die geregeld aan de zijlijn heeft gestaan en vaker als invaller fungeerde. Hij heeft zich de laatste jaren ontwikkeld en is sterk uit de coronaperiode gekomen. Daarmee heeft Stijn binnen de organisatie een basisplaats afgedwongen.
+  </footer>
+  
+</div>
+<br>
+<img src="1000x288_stijn_.png"border=10>
+</body>
+<br>
+<a href="https://www.fc-eindhoven.nl/stijn-otten-nieuwe-operationeel-manager-fc-eindhoven-futsal"target="_blank">Click here for the original interview</a>
+<hr>
+<h3>Things i like to do</h3>
+<ul>
+  <li>Gaming
+      <ul>
+        <li>FIFA</li>
+        <li>Call Of Duty</li>
+      </ul>
+  </li>
+  <li>Footbal
+      <ul>
+        <li>FC Eindhoven</li>
+        <li>PSV</li>
+      </ul>
+  </li>
+  <li>Movies and series
+    <ul>
+      <li>Game Of Thrones</li>
+      <li>Gladiator</li>
+    </ul>
+  </li>
+</ul>
+<hr>
+<!DOCTYPE html>
+<html>
+<body>
+<h2>You can visit my website from al over the world.</h2>
+<h3>Click on the button to find out where you are</h3>
+<p>Click the button to get your coordinates.</p>
+
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.watchPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+    
+function showPosition(position) {
+    x.innerHTML="Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+<img src="worldmap.png"border=10>
+</body>
+
+
+</html>
+
